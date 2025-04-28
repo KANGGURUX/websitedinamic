@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Travel Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="logo-corner">
+        <img src="https://img.icons8.com/color/48/000000/globe--v2.png" alt="Travel Gallery Logo" class="logo-img">
+        <span class="logo-text">Travel Gallery</span>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+        <nav class="header-menu" id="headerMenu">
+            <a href="index.html">Home</a>
+            <a href="albums.html">Albums</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+    <div class="container">
+        <a href="index.html" class="cta-btn dreamy back-cta"><i class="fas fa-arrow-left"></i> Back to Home</a>
+        <section class="contact-section">
+            <h2>Contact Me</h2>
+            <p>Have a question about traveling in Indonesia, want to collaborate, or just want to say hello? Fill out
+                the form below and I'll get back to you soon. Let's share the beauty of Indonesia together!</p>
+            <form class="contact-form" action="mailto:your@email.com" method="POST" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="cta-btn dreamy">Send Message</button>
+            </form>
+        </section>
+    </div>
+    <script>
+        // Simple menu toggle for header
+        const menuBtn = document.getElementById('menuBtn');
+        const headerMenu = document.getElementById('headerMenu');
+        menuBtn.onclick = () => {
+            headerMenu.classList.toggle('open');
+        };
+    </script>
+</body>
+
+</html>

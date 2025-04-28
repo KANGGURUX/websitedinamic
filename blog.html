@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog Highlights</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="logo-corner">
+        <img src="https://img.icons8.com/color/48/000000/globe--v2.png" alt="Travel Gallery Logo" class="logo-img">
+        <span class="logo-text">Travel Gallery</span>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+        <nav class="header-menu" id="headerMenu">
+            <a href="index.html">Home</a>
+            <a href="albums.html">Albums</a>
+            <a href="blog.html">Blog</a>
+        </nav>
+    </div>
+    <div class="container">
+        <a href="index.html" class="cta-btn dreamy back-cta"><i class="fas fa-arrow-left"></i> Back to Home</a>
+        <section id="blog-highlights">
+            <div class="blog-intro-section">
+                <h2 class="blog-intro-headline">Stories from Across Indonesia</h2>
+                <p class="blog-intro-text">
+                    Dive into adventures, local wisdom, and hidden gems from every corner of Indonesia! Discover captivating stories, travel tips, and highlights from Bali, Java, Sumatra, Sulawesi, Papua, and more. Let these blogs inspire your next journey through the islands of Indonesia.
+                </p>
+            </div>
+            <h2>Travel Blog Highlights</h2>
+            <div class="blog-list">
+                <div class="blog-card">
+                    <h3>Wonders of Santorini</h3>
+                    <p>Experience the magic of Greece's blue domes, sunsets, and whitewashed villages.</p>
+                    <a class="read-more" href="#">Read More</a>
+                </div>
+                <div class="blog-card">
+                    <h3>Safari in Kenya</h3>
+                    <p>Discover the thrill of wildlife adventure in the heart of Africa's savannahs.</p>
+                    <a class="read-more" href="#">Read More</a>
+                </div>
+                <div class="blog-card">
+                    <h3>Tokyo Nights</h3>
+                    <p>Explore neon-lit streets, sushi delights, and the vibrant culture of Japan's capital.</p>
+                    <a class="read-more" href="#">Read More</a>
+                </div>
+                <div class="blog-card">
+                    <h3>Patagonia Trekking</h3>
+                    <p>Embark on a breathtaking journey through glaciers, peaks, and wild landscapes.</p>
+                    <a class="read-more" href="#">Read More</a>
+                </div>
+                <div class="blog-card">
+                    <h3>Venice by Gondola</h3>
+                    <p>Glide through romantic canals and discover the timeless charm of Venice.</p>
+                    <a class="read-more" href="#">Read More</a>
+                </div>
+                <div class="blog-card">
+                    <h3>Sydney Sunrises</h3>
+                    <p>Wake up to the beauty of Australia's iconic beaches and vibrant city life.</p>
+                    <a class="read-more" href="#">Read More</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+    // Simple menu toggle for header
+    const menuBtn = document.getElementById('menuBtn');
+    const headerMenu = document.getElementById('headerMenu');
+    menuBtn.onclick = () => {
+      headerMenu.classList.toggle('open');
+    };
+    </script>
+</body>
+</html>
